@@ -1,7 +1,11 @@
-import styles from './Navbar.css'
+import styles from './Footer.css'
 
 const Footer = () => {
-  return <div>Footer</div>
+  return (
+    <footer className="footer">
+      <h3>Atlética Granada &copy;2022</h3>
+    </footer>
+  )
 }
 
 export default Footer
