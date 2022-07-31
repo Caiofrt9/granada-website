@@ -7,7 +7,11 @@
   background-color: #000;
 }
 
-.img{
+.logo {
+  padding-right: 1rem;
+}
+
+.logo img{
   width: 120px;
  }
 
@@ -19,7 +23,7 @@
 
 .links_list li {
   margin-right: 4em;
-  color: #e81594;
+  color: #ef2475;
   font-size: 18px;
 }
 

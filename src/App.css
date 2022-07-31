@@ -2,3 +2,26 @@
   min-height: 60vh;
   margin-bottom: 5em;
 }
+
+
+
+
+:root {
+  --color-bg: #161516;
+  --color-bg-variant: #121212;
+
+  --color-primary: #e81594;
+  --color-pink-variant: ##E917C3;
+
+  --color-green: #109A4C;
+  --color-green-variant: #247848
+
+
+  --color-primary-variant: rgba(77, 181, 255, 04)
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, .6);
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-ms: 90%;
+}
