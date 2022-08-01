@@ -5,6 +5,7 @@ import './App.css'
 // Components
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import About from './Pages/About/About'
 
 //Pages
 import Home from './Pages/Home/Home'
@@ -12,11 +13,16 @@ import Home from './Pages/Home/Home'
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <div className="container">
-        <Home />
-      </div>
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
     </div>
   )
 }

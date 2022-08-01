@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import styles from './Navbar.css'
 
@@ -7,18 +7,27 @@ import logo from '../assets/logo.png'
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">
-        <img className="img" src={logo} />
-      </div>
+      <NavLink to="/" className="logo">
+        <img src={logo} />
+      </NavLink>
+
+      {/* ------ */}
 
       <ul className="links_list">
-        <li>Sobre</li>
+        <li>
+          <NavLink to="/about">Sobre</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">Modalidades</NavLink>
+        </li>
 
-        <li>Modalidades</li>
+        <li>
+          <NavLink to="/">Eventos</NavLink>
+        </li>
 
-        <li>Produtos</li>
-
-        <li>Home</li>
+        <li>
+          <NavLink to="/">Produtos</NavLink>
+        </li>
       </ul>
     </nav>
   )

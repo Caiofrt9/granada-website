@@ -13,6 +13,7 @@
 
 .logo img{
   width: 120px;
+  padding-left:1rem;
  }
 
 .links_list {
@@ -21,8 +22,13 @@
 
 } 
 
-.links_list li {
-  margin-right: 4em;
+.links_list li{
+  list-style: none;
+}
+
+.links_list li a {
+  text-decoration: none;
+  margin-right: 2em;
   color: #ef2475;
   font-size: 18px;
 }
