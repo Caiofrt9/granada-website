@@ -1,0 +1,30 @@
+.container{
+  margin-top: 2rem;
+}
+
+.presentation{
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: aliceblue;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+
+}
+
+.presentation-text{
+  background-color: aqua;
+  text-align: center;
+}
+
+.avatar-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.avatar-img img{ 
+  width: 31rem;
+}
