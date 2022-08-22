@@ -1,0 +1,21 @@
+.swiper {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  width: 50rem;
+  height: 30rem;
+}
+
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.swiper-button-prev{
+  color: green;
+}
+.swiper-button-next{
+  color: green;
+}
+

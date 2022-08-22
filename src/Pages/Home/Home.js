@@ -2,26 +2,29 @@ import styles from './Home.css'
 
 import avatar from '../../assets/doleta.png'
 
+import { SwiperSlide } from 'swiper/react'
+import bandeira from '../../assets/bandeira.jpeg'
+import Slide from '../../components/Slide'
+
+const settings = {
+  spaceBetween: 50,
+  slidesPerView: 1,
+  navigation: true
+}
+
 const Home = () => {
   return (
-    <div className="container">
-      <div className="presentation">
-        <div className="presentation-text">
-          <h1>Atlética Granada</h1>
-          <p>
-            is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s, when an unknown printer took a galley of type and scrambled
-            it to make a type specimen book. It has survived not only five
-          </p>
-          <button>Saiba Mais</button>
-          <h2>Eu nao vim pra dar lucro, vim pra dar prejuizo</h2>
-        </div>
-        <div className="avatar-img">
-          <img src={avatar} />
-        </div>
-      </div>
-    </div>
+    <Slide settings={settings}>
+      <SwiperSlide>
+        <img src={bandeira} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={bandeira} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={bandeira} />
+      </SwiperSlide>
+    </Slide>
   )
 }
 
